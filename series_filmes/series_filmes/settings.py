@@ -1,3 +1,6 @@
+import os
+
+# just import os
 """
 Django settings for series_filmes project.
 
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'series_filmes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
